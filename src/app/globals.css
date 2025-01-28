@@ -3,19 +3,66 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Backgrounds */
+  --background: rgb(24, 24, 24); /* Dark background for YouTube dark mode */
+  --foreground: rgb(255, 255, 255); /* White text/icons */
+  --card: rgb(33, 33, 33); /* Slightly lighter background for cards */
+  --card-foreground: rgb(255, 255, 255); /* Text inside cards */
+  --popover: rgb(33, 33, 33); /* Pop-up or overlay background */
+  --popover-foreground: rgb(255, 255, 255); /* Text in pop-ups */
+
+  /* Primary and Secondary Colors */
+  --primary: rgb(255, 0, 0); /* YouTube red */
+  --primary-foreground: rgb(255, 255, 255); /* White text on primary elements */
+  --secondary: rgb(55, 55, 55); /* Secondary background elements */
+  --secondary-foreground: rgb(200, 200, 200); /* Muted text for secondary elements */
+
+  /* Muted and Accent */
+  --muted: rgb(75, 75, 75); /* Muted gray for borders or low-emphasis areas */
+  --muted-foreground: rgb(169, 169, 169); /* Muted text for less important info */
+  --accent: rgb(30, 136, 229); /* YouTube's blue for links or accents */
+  --accent-foreground: rgb(255, 255, 255); /* White text on accent colors */
+
+  /* Alerts and Status */
+  --destructive: rgb(255, 82, 82); /* Red for errors or destructive actions */
+  --destructive-foreground: rgb(255, 255, 255); /* White text on destructive elements */
+
+  /* Borders and Inputs */
+  --border: rgb(55, 55, 55); /* Borders for cards, inputs, etc. */
+  --input: rgb(45, 45, 45); /* Input background in dark mode */
+  --ring: rgb(255, 0, 0); /* Focus ring, matching YouTube red */
+
+  /* Chart Colors */
+  --chart-1: rgb(255, 99, 71); /* Tomato red for data visualization */
+  --chart-2: rgb(60, 179, 113); /* Medium sea green for variety */
+  --chart-3: rgb(70, 130, 180); /* Steel blue for accents */
+  --chart-4: rgb(255, 215, 0); /* Gold for highlights */
+  --chart-5: rgb(255, 140, 0); /* Dark orange for contrast */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+  --chart-1: 220 70% 50%;
+  --chart-2: 160 60% 45%;
+  --chart-3: 30 80% 55%;
+  --chart-4: 280 65% 60%;
+  --chart-5: 340 75% 55%;
 }
