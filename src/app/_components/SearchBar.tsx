@@ -7,7 +7,7 @@ function SearchBar() {
   return (
     <>
       <div className="flex -mb-10 mt-5">
-        <h1 className="text-2xl pl-6 font-semibold text-center text-gray-900">
+        <h1 className="text-2xl pl-6 font-semibold text-center text-white lg:text-gray-900">
           YouTube
         </h1>
       </div>

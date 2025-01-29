@@ -1,6 +1,6 @@
 function SideBar() {
     return (
-      <div className="w-60 h-screen bg-white border-r border-gray-300 p-4 text-black">
+      <div className="w-60 h-screen bg-white border-r border-gray-300 p-4 text-black hidden md:block">
         {/* Top Links */}
         <nav className="space-y-1">
           <a
