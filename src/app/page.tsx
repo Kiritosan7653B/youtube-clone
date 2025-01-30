@@ -269,17 +269,11 @@ function HomePage() {
   const [videos, setVideos] = useState<Video[]>([]);
 
   useEffect(() => {
-    fetch("/api/videos")
+    fetch("http://localhost:4747")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data); 
-        const transformedData = data.map((video: any) => ({
-          ...video,
-          views: video.views.toString(), // Convert BigInt
-          likes: video.likes.toString(), // Convert BigInt
-          dislikes: video.dislikes.toString(), // Convert BigInt
-        }));
-        setVideos(transformedData);
+        
+        setVideos(data);
       })
       .catch((error) => console.error("Error fetching videos:", error));
   }, []);

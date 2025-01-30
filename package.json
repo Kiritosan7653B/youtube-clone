@@ -2,6 +2,8 @@
   "name": "youtube-clone",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,6 +12,8 @@
   },
   "dependencies": {
     "@prisma/client": "^6.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
     "next": "15.1.6",
     "pg": "^8.13.1",
     "react": "^19.0.0",

@@ -4,9 +4,9 @@ interface VideoDetails {
     channel: string;
     views: number;
     since: string;
-    thumbnailUrl: string;
+    thumbnail_url: string;
     description: string;
-    publishedAt: string;
+    published_at: string;
     comments: number;
     likes: number;
     dislikes: number;
@@ -20,9 +20,9 @@ interface VideoDetails {
     channel: string;
     views: number;
     since: string;
-    thumbnailUrl: string;
+    thumbnail_url: string;
     description: string;
-    publishedAt: string;
+    published_at: string;
     comments: number;
     likes: number;
     dislikes: number;
@@ -35,9 +35,9 @@ interface VideoDetails {
       channel: string,
       views: number,
       since: string,
-      thumbnailUrl: string,
+      thumbnail_url: string,
       description: string,
-      publishedAt: string,
+      published_at: string,
       comments: number,
       likes: number,
       dislikes: number,
@@ -49,9 +49,9 @@ interface VideoDetails {
       this.channel = channel;
       this.views = views;
       this.since = since;
-      this.thumbnailUrl = thumbnailUrl;
+      this.thumbnail_url = thumbnail_url;
       this.description = description;
-      this.publishedAt = publishedAt;
+      this.published_at = published_at;
       this.comments = comments;
       this.likes = likes;
       this.dislikes = dislikes;
